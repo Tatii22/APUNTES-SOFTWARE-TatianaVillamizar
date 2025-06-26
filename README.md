@@ -53,3 +53,22 @@ git push -u origin main
 
 # Comandos para tener en cuenta
 `git pull` es un comando que descarga contenido de un repositorio remoto y lo combina con el repositorio local, actualizando el estado de este último con los cambios más recientes. 
+
+# Comandos esenciales para trabajar con ramas en Git
+
+| Acción                                  | Comando                                      | Descripción breve                                  |
+|----------------------------------------|----------------------------------------------|----------------------------------------------------|
+| Crear una nueva rama                   | `git branch nombre-rama`                     | Solo la crea, no cambia a ella.                    |
+| Cambiarse de rama                      | `git checkout nombre-rama`                   | Cambia a la rama especificada.                     |
+| Crear y cambiarse a una rama           | `git checkout -b nombre-rama`                | Crea la rama y cambia a ella (todo en uno).        |
+| Cambiarse con switch (Git moderno)     | `git switch nombre-rama`                     | Alternativa a `checkout`.                  |
+| Crear y cambiarse con switch           | `git switch -c nombre-rama`                  | Alternativa a `checkout -b`.               |
+| Ver todas las ramas locales            | `git branch`                                 | Lista las ramas locales.                           |
+| Fusionar otra rama a la actual         | `git merge nombre-rama`                      | Mezcla los cambios de esa rama en la actual.       |
+| Subir rama nueva a GitHub              | `git push -u origin nombre-rama`             | Sube y vincula con GitHub.                         |
+| Traer cambios de una rama remota       | `git pull origin nombre-rama`                | Baja cambios de GitHub para esa rama.              |
+| Cambiar nombre a la rama actual        | `git branch -m nuevo-nombre`                 | Renombra la rama en la que estás.                  |
+| Borrar una rama local (fusionada)      | `git branch -d nombre-rama`                  | Borra la rama si ya fue fusionada.                 |
+| Borrar una rama local (forzado)        | `git branch -D nombre-rama`                  | Borra sin importar si fue fusionada.               |
+| Borrar una rama remota                 | `git push origin --delete nombre-rama`       | Elimina la rama en el repositorio remoto.          |
+
