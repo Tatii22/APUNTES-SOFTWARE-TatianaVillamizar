@@ -37,7 +37,7 @@ o para agregar todo lo creado
 - Se mueve a la rama main
 `git checkout main`
 - Si en la rama main se hace nuevos cambios y en la nueva rama tambien, pueden tener conflictos, para integrar lo nuevos cambios de la nueva rama a la rama principal se hace.
-`git merge apuntes-git`
+`git merge nombre-de-rama-que-quiere-integrar`
 
 ## 4. Subir a git
 - Se indica el link del repositorio creado, la rama llamada main y se empuja
@@ -46,4 +46,5 @@ git remote add origin https://github.com/Tatii22/info-GIT.git
 git branch -M main
 git push -u origin main
 ```
-
+# Comandos para tener en cuenta
+`git pull` es un comando que descarga contenido de un repositorio remoto y lo combina con el repositorio local, actualizando el estado de este último con los cambios más recientes. 
