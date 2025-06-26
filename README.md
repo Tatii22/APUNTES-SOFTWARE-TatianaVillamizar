@@ -30,4 +30,9 @@ o para agregar todo lo creado
 - Se ven los commit creados
 `git log`
 
+## 3. Crear y trabajar con una rama
+- Se crea nueva rama
+`git checkout -b nombrederama`
+- Se hace nuevo commit con lo cambios que se van a agregar a esta rama
+
 
