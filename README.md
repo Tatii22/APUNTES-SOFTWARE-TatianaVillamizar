@@ -1,5 +1,6 @@
 # Apuntes Github
 ## 1. Registrar credenciales y configuraciones
+Prueba en esta linea
 ### 1.1 Registro de usuario
 Luego de verificar que no hay credenciales registradas con `git config --global -l` se configuran mis credenciales: 
 ```bash
