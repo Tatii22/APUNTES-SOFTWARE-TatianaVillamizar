@@ -46,5 +46,8 @@ git remote add origin https://github.com/Tatii22/info-GIT.git
 git branch -M main
 git push -u origin main
 ```
+- se sube la rama que desee
+`git push -u origin nom-rama`
+
 # Comandos para tener en cuenta
 `git pull` es un comando que descarga contenido de un repositorio remoto y lo combina con el repositorio local, actualizando el estado de este último con los cambios más recientes. 
