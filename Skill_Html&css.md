@@ -96,18 +96,134 @@ El HTML que trabajamos actualmente es **HTML5**, una versión más moderna, sem�
 
 ---
 
-## Introducción a CSS
 
-**CSS** (Cascading Style Sheets o Hojas de Estilo en Cascada) es el lenguaje que usamos para aplicar estilos visuales a los documentos HTML.
+# CSS – Hojas de Estilo en Cascada
 
-### ¿Qué podemos hacer con CSS?
+## ¿Qué es CSS?
 
-- Cambiar colores, tamaños, fuentes y márgenes.
-- Organizar el contenido en columnas o filas.
-- Aplicar animaciones y transiciones.
-- Hacer que el sitio se vea bien en celulares y computadores.
+**CSS** significa *Cascading Style Sheets* (Hojas de Estilo en Cascada). Es un lenguaje utilizado para describir la presentación de un documento HTML. Mientras que HTML estructura el contenido, CSS lo embellece, definiendo cómo se verá visualmente.
+
+CSS permite aplicar estilos como colores, tipografía, márgenes, posiciones, tamaños, animaciones, entre otros aspectos visuales.
 
 ---
+
+## ¿Por qué se llama "en cascada"?
+
+Se llama "en cascada" porque los estilos se aplican con un sistema de prioridades. Por ejemplo:
+
+1. Estilos definidos por el navegador (por defecto).
+2. Estilos definidos por el usuario.
+3. Estilos del desarrollador (los que escribimos en nuestros archivos CSS).
+
+Cuando hay conflictos, CSS decide qué estilo aplicar según la **especificidad** y el **orden**.
+
+---
+
+## Formas de aplicar CSS
+
+### 1. CSS en línea (inline)
+
+Dentro de la misma etiqueta HTML:
+
+```html
+<p style="color: red;">Este texto es rojo.</p>
+```
+
+### 2. CSS interno (en el `<head>`)
+
+```html
+<head>
+  <style>
+    h1 {
+      color: blue;
+    }
+  </style>
+</head>
+```
+
+### 3. CSS externo (archivo aparte)
+
+Se recomienda usar esta forma por organización y mantenimiento:
+
+**Archivo `style.css`:**
+
+```css
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+```
+
+**En el HTML:**
+
+```html
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+```
+
+---
+
+## Selectores en CSS
+
+- **Universal:** `* { }` – Aplica a todos los elementos.
+- **Etiqueta:** `p { }` – Aplica a todos los párrafos.
+- **Clase:** `.clase { }` – Se usa para un grupo de elementos.
+- **ID:** `#id { }` – Aplica a un único elemento.
+- **Combinadores:** `div p { }`, `ul > li { }`, etc.
+
+---
+
+## Propiedades comunes
+
+| Propiedad       | Función                              |
+|----------------|---------------------------------------|
+| `color`         | Color del texto                      |
+| `background`    | Fondo del elemento                   |
+| `font-size`     | Tamaño de la fuente                  |
+| `margin`        | Margen exterior                      |
+| `padding`       | Espaciado interno                    |
+| `border`        | Borde del elemento                   |
+| `width` / `height` | Ancho y alto                     |
+| `display`       | Comportamiento del contenedor        |
+| `position`      | Posicionamiento                      |
+| `text-align`    | Alineación del texto                 |
+
+---
+
+## Unidades en CSS
+
+- Relativas: `em`, `rem`, `%`
+- Absolutas: `px`, `cm`, `mm`, `in`
+
+---
+
+## Colores
+
+- Nombre: `red`, `blue`, `black`
+- HEX: `#ff0000`
+- RGB: `rgb(255, 0, 0)`
+- RGBA: `rgba(255, 0, 0, 0.5)` (con opacidad)
+
+---
+
+## Comentarios en CSS
+
+```css
+/* Esto es un comentario */
+```
+
+---
+
+## Buenas prácticas
+
+- Usar CSS externo para mantener HTML limpio.
+- Nombrar clases e IDs de forma descriptiva.
+- Evitar usar `!important` a menos que sea estrictamente necesario.
+- Organizar reglas por secciones (estructura, layout, componentes, etc).
+
+---
+
 
 ### Documentación oficial recomendada
 
